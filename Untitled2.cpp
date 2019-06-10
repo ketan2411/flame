@@ -16,10 +16,11 @@ for(int i=0;first[i]!='\0';i++)
 {for(int j=0;second[j]!='\0';j++)
 {
 if(first[i]==second[j])
- count++;
+ j++;
  else 
- {
+ {count++;
  }
+ count=count%5;
 }}cout<<count;
 if(count==1)
 cout<<"friends";
