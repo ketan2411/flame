@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>FLAME</title>
+<center>
+<h1 style="color: lightgreen;">check your flame</h1>
+</center>
+</head>
+<body style="background-color=grey;">
+<center>
+<!-- <input type="text" id="username" placeholder="Username"><br />
+<input type="password" id="password" placeholder="Password"><br />
+<input type="button" value="Log on" onClick="clicked()"> -->
+
+
+<input style="background-color:transparent;color: white;   border: 2px solid red;
+  border-radius: 4px; " type="text" id="first" placeholder="first"><br />
+<input style="background-color:transparent;color: white;   border: 2px solid red;
+  border-radius: 4px;type="text" id="second" placeholder="second"><br />
+<input type="button" value="check" onClick="clicked2()">
+</center>
+<script>
+	function clicked2() { var count=0; var total
+		var  first=document.getElementById("first").value;
+		var second=document.getElementById("second").value;
+		
+		for(var i=0;i< first.length;i++)
+		{
+			for(var j=0;j < second.length;j++)
+		{
+			if(first[i]==second[j]) count++;
+			else ; 
+		}}
+		total=first.length+second.length-count-count;
+		window.alert(count);
+		console.log(total);
+		total=total%5;
+			console.log(total);
+if(total==1)
+{console.log("friends");}
+if(total==2)
+{console.log("love");}
+if(total==3)
+{console.log("affection");}
+if(total==4)
+{console.log("marriage"); } ///shreysh //ikit
+if(total==5)
+{console.log("enimes");}
+
+
+}
+	
+</script>
+</body>
+</html>
